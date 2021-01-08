@@ -14,7 +14,7 @@ function Footer() {
                         Krishna Saparia 
                     </Col>
                     <Col className = "p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Krishna Saparia.
+                        This Site was made by Krishna Saparia.
                     </Col>
                     </Row>
             </Container>
