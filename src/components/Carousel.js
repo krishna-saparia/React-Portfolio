@@ -43,11 +43,18 @@ class Carousel extends React.Component {
     }
 
     handlecardClick = (id , card) => {
+
+        console.log(id);
         // Split Operator
         let items = [...this.state.items];
 
         items[id].selected = items[id].selected ? false : true;
-
+            // if (items[id].selected){
+            //     items[id].selected = false;
+            // }
+            // else{
+            //     items[id].selected = false;
+            // }
         items.forEach (item => {
             if(item.id !== id){
                 item.selected = false;
@@ -61,7 +68,7 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item = {item} onClick={(e => this.handlecardClick(item.id , e))} key = {item.id} />
+            return <Card item = {item} click={(e => this.handlecardClick(item.id , e))} key = {item.id} />
         })
     }
 
